@@ -192,3 +192,54 @@
 // console.log(p && q); // and operator
 // console.log(!p);  // not operator
 // console.log(p || q);  // or operator
+
+/////TIMER FUNCTION
+// setTimeout Function
+// const delayedFunction=() => {
+//     console.log('Delayed function executed.');
+// }
+// setTimeout(delayedFunction,2000); //Execute after 2 sec
+// console.log("happy");  //it may run earlier but delayed function will come after 2 sec
+
+////setInterval Function //execute a functio of code repeatedlyy at specifies interval
+// const repeatedFunction =() => {
+//     console.log('Repeated execute function')
+// };
+// const intervalId = setInterval(repeatedFunction,1000);  //excute every 1 sec
+
+//// you want to stop ater some time
+//function to execute
+// function repeatedFunction() {
+//     console.log('Executing repeated function ');
+// }
+// const intervalId = setInterval(repeatedFunction,1000) ///set interval for running the code
+
+// setTimeout(() => {
+//     clearInterval(intervalId);  ///stop the interval
+//     console.log('Interval stopped.');
+// },5000);
+
+////////CALLBACKS FUNCTION
+// higher order function = which can take argument as function
+//synchronous function
+// function parentFunction(name,callback){
+//     callbacK();
+//     console.log("hey",name);
+// }
+// function randomFunction(){
+//     console.log("Hey i am callback function");
+// }
+// parentFunction("random string",randomFunction);
+
+///ASYNCHRONOUS FUNCTION
+// const parentFunction=(name,callback)=> {
+//     setTimeout(callback,1000);
+//     console.log("hey",name);
+// }
+// function randomFunction(){
+//     console.log("Hey i am callback function");
+// }
+
+// parentFunction("random string",function(){
+//     console.log("hey");
+// });
